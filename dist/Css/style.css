@@ -1,0 +1,526 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #444;
+    --overlay-color: rgba(0, 0, 0, 0.7);
+}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.3;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.navbar {
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.contactinfo {
+    background: var(--secondary-color);
+    color: white;
+    font-size: 0.7rem;
+    height: 2.2rem;
+}
+
+.contactinfo .hours {
+    background: rgb(238, 200, 29);
+    height: auto;
+}
+
+.navbar .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contactinfo .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 0.5rem;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+}
+
+.navbar .nav {
+    justify-self: self-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactinfo .contact {
+    justify-self: self-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .nav a {
+    padding: 0 1rem;
+}
+
+.navbar .nav a:hover {
+    color: #555;
+}
+
+.contactinfo .contact li {
+
+    padding: 0 2rem;
+}
+
+/* Showcase */
+
+#showcase{
+    background-image:url('../Img/bobcat.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#showcase h1{
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+}
+
+#showcase p{
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Utilities */
+.button {
+    display: inline-block;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    background: rgb(238, 200, 29);
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.overlay {
+    position: absolute;
+    top: o;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+}
+
+/* Services */
+.section-a2 {
+    background: rgb(243, 243, 243);
+}
+
+.section-a2 .container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-a2 h1 {
+    font-size: 2rem;
+}
+
+.section-a2 p {
+    margin: 1rem 0;
+}
+
+.section-b2 {
+    background: var(--secondary-color);
+    padding: 10px;
+}
+
+.section-b2 .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #eee;
+}
+
+.section-b2 .phone-wrapper .phone-logo{
+    display: flex;
+}
+
+.section-b2 .email-wrapper {
+    display: flex;
+    background: rgb(238, 200, 29);
+    align-items: center;
+    max-width: 400px;
+    margin-left: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section-b2 i{
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section-b2 h3 {
+    font-size: 20px;
+}
+
+/* Team Section */
+.team-section {
+    overflow: hidden;
+    text-align: center;
+    padding: 60px;
+}
+
+
+.team-section h1 {
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+
+.border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: rgb(238, 200, 29);
+    margin-bottom: 40px;
+}
+
+.ps {
+    margin-bottom: 40px;
+}
+
+.ps a{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.ps a img {
+    width: 100%;
+    filter: grayscale(80%);
+    transition: 0.4s all;
+}
+
+.ps a:hover > img{
+    filter: none;
+}
+
+.section-names {
+    max-width: 600px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.name {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Services section */
+.section-services {
+    height: 100px;
+}
+
+/* Recents section*/
+.section-recent {
+    background: var(--primary-color);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+}
+
+.section-recent h1 {
+margin: auto;
+display: flex;
+flex-direction: column;
+text-align: center;
+padding-top: 50px;
+}
+
+.section-recent .button {
+    display: inline-block;
+    margin: auto;
+
+}
+
+/* Home Sections */
+
+#section-a {
+    background: rgb(230, 228, 228);
+}
+
+#section-a p{
+margin: 1rem 0;
+}
+
+#section-a .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#section-b{
+    padding:50px;
+    padding-top: 100px;
+    background: white;
+    text-align: center;
+    max-width: 700px;
+    margin:auto;
+}
+
+#section-b p{
+    padding-top: 20px;
+}
+
+#section-c{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 10px;
+    margin: auto;
+    max-width: 60vw;
+}
+
+#section-c div{
+    padding: 30px;
+    justify-items: center;
+    margin: auto;
+}
+
+#section-c .box-1, #section-c .box-3{
+    background: rgb(230, 228, 228);
+    height: 260px;
+    overflow: hidden;
+    
+}
+
+#section-c .box-2{
+    background: rgb(255, 192, 19);
+    border-radius: 3px;
+    padding-top:50px;
+    color: white;
+    height: 300px;
+    overflow: auto;
+}
+
+#section-c h1{
+    font-size: 20px;
+}
+
+#section-c p{
+    font-size: 15px;
+    margin: 1rem 0;
+}
+
+#section-c a{
+    text-decoration: none;
+    color: black;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#section-c a:hover {
+    color: #555;
+}
+
+.section-d {
+    position: relative;
+    background: url('../Img/service.jpeg') no-repeat bottom center/cover;
+    height: 600px;
+}
+
+.section-d-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 860px;
+    padding: 5rem 0;
+}
+
+.section-d-inner h3 {
+    font-size: 2rem;
+}
+
+.section-d-inner h2 {
+    font-size: 5rem;
+    margin-top: 1rem ;
+}
+
+.section-d-inner p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.section-e .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.section-recent .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-recent .gallery img, .section-recent .gallery a {
+    height: 100%;
+    width: 100%;
+}
+
+.section-e .gallery a:first-child{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+
+.section-e .gallery img, .section-e .gallery a {
+    height: 100%;
+    width: 100%;
+}
+
+/* Footer */
+.section-footer {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.section-footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.section-footer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-footer h3 {
+    margin-bottom: 0.7rem;
+}
+
+.section-footer a{
+    line-height: 1.9;
+    color: #ccc;
+}
+
+.section-footer a > i {
+    color: #555;
+    margin-right: 0.5rem;
+}
+
+/* Email Form */
+.email-form {
+    width: 100%;
+    display: inline-block;
+    background-color: #555;
+    position: relative;
+    border-radius: 5px;
+    line-height: 0;
+    margin-top: 1rem;
+}
+
+.email-form .form-control {
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    color: #ddd;
+    background-color: transparent;
+    margin: 0;
+    padding: 0 2rem 0 1.5rem;
+    width: 100%;
+    height: 45px;
+    border-radius: 2px;
+}
+
+.email-form .submit {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #eee;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    color: #333;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+}
+
+/* Media Queries */
+@media(max-width: 700px) {
+}
