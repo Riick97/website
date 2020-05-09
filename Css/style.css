@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 :root {
@@ -71,7 +71,10 @@ img {
 }
 
 .navbar .logo {
-    font-size: 2rem;
+    width: 300px;
+    height: auto;
+    padding-top: none;
+    margin-top: none;
 }
 
 .navbar .nav {
@@ -351,6 +354,7 @@ margin: 1rem 0;
 
 #section-c .box-1, #section-c .box-3{
     background: rgb(230, 228, 228);
+    width: 20vw;
     height: 260px;
     overflow: hidden;
     
@@ -358,6 +362,7 @@ margin: 1rem 0;
 
 #section-c .box-2{
     background: rgb(255, 192, 19);
+    width: 20vw;
     border-radius: 3px;
     padding-top:50px;
     color: white;
@@ -445,6 +450,118 @@ margin: 1rem 0;
     width: 100%;
 }
 
+/* Contact page */
+#contact-section {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(../Img/service.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2%;
+    padding-top: 50px;
+}
+
+#contact-section .container h2{
+text-align: center;
+font-size: 2rem;
+color: #fff;
+padding-bottom: 10px;
+}
+
+#contact-section .container p{
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.contact-form i.fa{
+    font-size: 22px;
+    padding: 3%;
+    background-color: none;
+    margin: 2%;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 2px solid rgb(243, 243, 243);
+    color: rgb(243, 243, 243)
+}
+
+.contact-form i.fa:hover{
+    cursor: pointer;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.contact-form{
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.form-info{
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+textarea::placeholder{
+    color: #fff;
+}
+
+.submit{
+    width: 40%;
+    background: none;
+    padding: 4px;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3%;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.submit:hover{
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+
 /* Footer */
 .section-footer {
     background: var(--primary-color);
@@ -521,6 +638,17 @@ margin: 1rem 0;
     border-radius: 0 2px 2px 0;
 }
 
+
+
 /* Media Queries */
 @media(max-width: 700px) {
+    #contact-section .contact-form{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact-section .submit{
+        width: 60%;
+    }
 }
