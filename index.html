@@ -10,6 +10,8 @@
     <title>Zuper Construction</title>
 </head>
 <body id="home">
+
+    <!-- Contact Info -->
     <div class="contactinfo">
             <div class="container">
                 <h2>contact info: </h2>
@@ -19,29 +21,30 @@
                 <li class="hours">Mon - Sat 8:00 - 18:00</li>
             </ul>
         </div>
-        
     </div>
+
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h2>Zuper Contruction</h2>
+                <h2>Zuper Construction</h2>
             </div>
             
             <ul class="nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Showcase -->
-
     <header id="showcase">
         <h1>Welcome to zuper construction</h1>
         <p>Trabou serio i responsabel</p>
 
-        <a href="services.html" class="button">Read More</a>
+        <a href="services.html" class="button">Our Services</a>
     </header>
 
     <!-- Icons -->
@@ -76,18 +79,24 @@
         <!-- Promise -->
     <section id="section-c">
        <div class="box-1">
-           <h1>Our Story</h1>
+           <div class="text-Wrapper">
+            <h1>Our Story</h1>
            <p>Zuper Construciton was started in 2012 as a small company. as soon as we started getting more clients we had to expand and work with other contractors to be agile enough to work on all sorts of projects.</p>
+           </div>
+           
         </div>
        <div class="box-2">
-           <h1>About Us</h1>
-           <p>Zuper Construction started in 2012 as a single person but has grown fast and gathered much experience from working on all sorts of projects from pipe instalation to material for construction</p>
-          
+            <div class="text-Wrapper">
+                <h1>About Us</h1>
+                <p>Zuper Construction started in 2012 as a single person but has grown fast and gathered much experience from working on all sorts of projects from pipe instalation to material for construction</p>
+            </div>
        </div>
        <div class="box-3">
-           <h1>Our Commitement</h1>
-           <p>One of our main focuses is your satisfaction with our service. So, we work hard to bring the best work for you</p>
-       </div>
+           <div class="text-Wrapper">
+                <h1>Our Commitement</h1>
+                <p>One of our main focuses is your satisfaction with our service. So, we work hard to bring the best work for you</p>
+            </div>
+        </div>
     </section>
 
     <!-- Overlay Text-->
@@ -106,7 +115,7 @@
         <div class="gallery">
 
         <a href="Img/portfolio1.jpeg" class="big">
-            <img src="Img/portfolio1.jpeg" alt="">
+            <img src="Img/example1.png" alt="">
         </a>
         <a href="Img/bobcat.jpg" class="big">
             <img src="Img/bobcat.jpg" alt="">
@@ -142,14 +151,14 @@
                 <h3>Company Info</h3>
                 <ul>
                     <li><a href="#">All Services</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="#">Contact Info</a></li>
                     <li><a href="#">Terms of Service</a></li>
                 </ul>
             </div>
             <div>
                 <h3>Subscribe</h3>
-                <p>Subscribe and see what we've been up to</p>
+                <p>Subscribe to our list and see what we've been up to</p>
                 <form action="email-form" method="POST" data-nerlify="true">
                     <email class="email-form">
                         <span class="form-control-wrap">
@@ -167,6 +176,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/simple-lightbox.jquery.js"></script>
 
+    <!-- Scripts -->
     <script>
         $(function() {
             const $gallery = $('.gallery a').simpleLightbox();
