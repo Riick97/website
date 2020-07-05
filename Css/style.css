@@ -107,7 +107,6 @@ img {
 }
 
 .contactinfo .contact li {
-
     padding: 0 2rem;
 }
 
@@ -808,15 +807,20 @@ textarea::placeholder{
 
     .contactinfo {
         background: var(--secondary-color);
-        color: white;
+        color: transparent;
         font-size: 0.7rem;
         height: 0px;
     }
+
+    .contactinfo .contact li {
+        color: transparent;
+        padding: 0 2rem;
+    }
     
     .contactinfo .hours {
+        color: transparent;
         background: rgb(238, 200, 29);
-        height: 0
-    ;
+        height: 0;
     }
 
     #section-a .container {
@@ -914,8 +918,13 @@ textarea::placeholder{
         color: transparent;
     }
 
+    .section-b2 p{
+        font-size: 14px;
+    }
+
     .section-b2 .email-wrapper a{
         display: flex;
+        padding: 20px;
         margin: auto;
         align-items: center;
         background: rgb(238, 200, 29);
@@ -926,4 +935,16 @@ textarea::placeholder{
         color: #eee;
     }
 
+    .section-b2 .email-logo{
+        width: 0;
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar {
+        font-size: 1.0rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
 }
