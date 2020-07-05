@@ -54,13 +54,14 @@
                 <!-- Second grid -->
 
                 <div>
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="text" placeholder="Last Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <input type="text" placeholder="Subject of this message" required>
+                    <form action="POST" data-netlify="true">
+                        <input type="text" name="firstname" placeholder="Your Name" required>
+                        <input type="text" name="lastname" placeholder="Last Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="subject" placeholder="Subject of this message" required>
                         <textarea name="message" placeholder="Message" rows="5" required></textarea>
                         <button class="submit">Send Message</button>
+                        <div data-netlify-recaptcha="true"></div>
                     </form>
                 </div>
             </div>
@@ -95,7 +96,7 @@
             <div>
                 <h3>Subscribe</h3>
                 <p>Subscribe to our list and see what we've been up to</p>
-                <form action="email-form" method="POST" data-nerlify="true">
+                <form action="POST" data-netlify="true">
                     <email class="email-form">
                         <span class="form-control-wrap">
                             <input type="email" name="email" id="email" size="40" class="form-control" placeholder="Email">
