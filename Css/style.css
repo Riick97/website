@@ -815,7 +815,7 @@ textarea::placeholder{
     .contactinfo {
         background: var(--secondary-color);
         color: transparent;
-        font-size: 0.7rem;
+        font-size: 0;
         height: 0px;
     }
 
@@ -826,6 +826,7 @@ textarea::placeholder{
     
     .contactinfo .hours {
         color: transparent;
+        font-size: 0;
         background: rgb(238, 200, 29);
         height: 0;
     }
@@ -953,5 +954,6 @@ textarea::placeholder{
         font-size: 1.0rem;
         padding-top: 0.3rem;
         padding-bottom: 0.3rem;
+        white-space: nowrap;
     }
 }
