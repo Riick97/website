@@ -954,6 +954,6 @@ textarea::placeholder{
         font-size: 1.0rem;
         padding-top: 0.3rem;
         padding-bottom: 0.3rem;
-        white-space: nowrap;
+        
     }
 }
