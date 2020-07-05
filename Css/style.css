@@ -713,6 +713,13 @@ textarea::placeholder{
     /* transition: 0.3s; */
 }
 
+.cap{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+   
+}
+
 
 /* Footer */
 .section-footer {
